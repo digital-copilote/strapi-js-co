@@ -8,11 +8,11 @@
   "options": {},
   "attributes": {
     "title_1": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
     "title_2": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
     "text": {

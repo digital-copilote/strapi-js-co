@@ -388,28 +388,45 @@
           "font_secondary_color": {
             "type": "string"
           },
-          "Action_card": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id",
-                "image",
-                "title",
-                "text"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
+          "action": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "action_cards": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "image",
+                    "title",
+                    "text"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -492,28 +509,45 @@
           "font_secondary_color": {
             "type": "string"
           },
-          "Action_card": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id",
-                "image",
-                "title",
-                "text"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
+          "action": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "action_cards": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "image",
+                    "title",
+                    "text"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }

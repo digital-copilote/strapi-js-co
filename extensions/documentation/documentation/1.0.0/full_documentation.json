@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/11/2021 5:04:28 PM"
+    "x-generation-date": "08/11/2021 5:38:43 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3250,28 +3250,45 @@
           "font_secondary_color": {
             "type": "string"
           },
-          "Action_card": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id",
-                "image",
-                "title",
-                "text"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
+          "action": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "action_cards": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "image",
+                    "title",
+                    "text"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -3354,28 +3371,45 @@
           "font_secondary_color": {
             "type": "string"
           },
-          "Action_card": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id",
-                "image",
-                "title",
-                "text"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
+          "action": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "action_cards": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "image",
+                    "title",
+                    "text"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "image": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }

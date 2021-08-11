@@ -2,18 +2,22 @@
   "collectionName": "components_content_actuses",
   "info": {
     "name": "actus",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title_1": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "title_2": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "text": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   }
 }

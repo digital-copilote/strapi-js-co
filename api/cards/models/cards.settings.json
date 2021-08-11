@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "name": "Cards"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Action_Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.action-card"
+    }
+  }
+}

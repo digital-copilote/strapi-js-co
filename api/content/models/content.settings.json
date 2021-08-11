@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "name": "Content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.description"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.link",
+      "required": false
+    }
+  }
+}

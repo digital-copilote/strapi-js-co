@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buttons",
+  "info": {
+    "name": "buttons",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "textColorShade": {
+      "type": "string"
+    },
+    "bgColorShade": {
+      "type": "string"
+    },
+    "borderColor": {
+      "type": "string"
+    },
+    "borderColorShade": {
+      "type": "string"
+    },
+    "bgSlide": {
+      "type": "string"
+    }
+  }
+}

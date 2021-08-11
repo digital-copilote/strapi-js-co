@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_cards_skill_cards",
+  "info": {
+    "name": "Skill_Card",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "text",
+      "required": true
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

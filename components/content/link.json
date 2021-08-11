@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_links",
+  "info": {
+    "name": "Link",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "textColorShade": {
+      "type": "string"
+    }
+  }
+}

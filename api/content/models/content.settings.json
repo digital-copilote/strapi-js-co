@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "contents",
   "info": {
     "name": "content",
@@ -21,6 +21,18 @@
       "type": "component",
       "repeatable": true,
       "component": "content.event"
+    },
+    "primary_color": {
+      "type": "text"
+    },
+    "secondary_color": {
+      "type": "string"
+    },
+    "font_primary_color": {
+      "type": "string"
+    },
+    "font_secondary_color": {
+      "type": "string"
     }
   }
 }

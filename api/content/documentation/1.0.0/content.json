@@ -388,6 +388,32 @@
           "font_secondary_color": {
             "type": "string"
           },
+          "Action_card": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "image",
+                "title",
+                "text"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -465,6 +491,32 @@
           },
           "font_secondary_color": {
             "type": "string"
+          },
+          "Action_card": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "image",
+                "title",
+                "text"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

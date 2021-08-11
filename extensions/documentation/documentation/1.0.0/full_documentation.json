@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/11/2021 4:16:56 PM"
+    "x-generation-date": "08/11/2021 5:04:28 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3105,7 +3105,10 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "image",
+                "title",
+                "text"
               ],
               "properties": {
                 "id": {
@@ -3136,7 +3139,10 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "image",
+                "title",
+                "text"
               ],
               "properties": {
                 "id": {
@@ -3244,6 +3250,32 @@
           "font_secondary_color": {
             "type": "string"
           },
+          "Action_card": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "image",
+                "title",
+                "text"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3321,6 +3353,32 @@
           },
           "font_secondary_color": {
             "type": "string"
+          },
+          "Action_card": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "image",
+                "title",
+                "text"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

@@ -527,7 +527,10 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "image",
+                "title",
+                "text"
               ],
               "properties": {
                 "id": {
@@ -558,7 +561,10 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "image",
+                "title",
+                "text"
               ],
               "properties": {
                 "id": {

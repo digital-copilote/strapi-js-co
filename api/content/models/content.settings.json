@@ -33,6 +33,11 @@
     },
     "font_secondary_color": {
       "type": "string"
+    },
+    "Action_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.action-card"
     }
   }
 }

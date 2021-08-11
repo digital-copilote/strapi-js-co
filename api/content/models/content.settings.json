@@ -17,7 +17,7 @@
       "repeatable": false,
       "component": "content.actus"
     },
-    "event": {
+    "events": {
       "type": "component",
       "repeatable": true,
       "component": "content.event"

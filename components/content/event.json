@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_content_events",
+  "info": {
+    "name": "event",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "image": {
+      "type": "text"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "text": {
+      "type": "string"
+    },
+    "register": {
+      "type": "text"
+    }
+  }
+}

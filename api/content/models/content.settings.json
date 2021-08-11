@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "contents",
   "info": {
-    "name": "Content",
+    "name": "content",
     "description": ""
   },
   "options": {
@@ -12,16 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "description": {
+    "actu": {
       "type": "component",
       "repeatable": false,
-      "component": "content.description"
+      "component": "content.actus"
     },
-    "links": {
+    "event": {
       "type": "component",
       "repeatable": true,
-      "component": "content.link",
-      "required": false
+      "component": "content.event"
     }
   }
 }

@@ -522,7 +522,7 @@
           "id": {
             "type": "string"
           },
-          "description": {
+          "actu": {
             "type": "object",
             "required": [
               "id"
@@ -531,36 +531,42 @@
               "id": {
                 "type": "string"
               },
+              "title_1": {
+                "type": "string"
+              },
+              "title_2": {
+                "type": "string"
+              },
               "text": {
-                "type": "string"
-              },
-              "textColor": {
-                "type": "string"
-              },
-              "textColorShade": {
                 "type": "string"
               }
             }
           },
-          "links": {
+          "event": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id",
-                "text"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
+                "title": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string",
+                  "format": "date-time"
+                },
                 "text": {
                   "type": "string"
                 },
-                "textColor": {
-                  "type": "string"
-                },
-                "textColorShade": {
+                "register": {
                   "type": "string"
                 }
               }
@@ -574,7 +580,7 @@
       },
       "NewContent": {
         "properties": {
-          "description": {
+          "actu": {
             "type": "object",
             "required": [
               "id"
@@ -583,36 +589,42 @@
               "id": {
                 "type": "string"
               },
+              "title_1": {
+                "type": "string"
+              },
+              "title_2": {
+                "type": "string"
+              },
               "text": {
-                "type": "string"
-              },
-              "textColor": {
-                "type": "string"
-              },
-              "textColorShade": {
                 "type": "string"
               }
             }
           },
-          "links": {
+          "event": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id",
-                "text"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
+                "title": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string",
+                  "format": "date-time"
+                },
                 "text": {
                   "type": "string"
                 },
-                "textColor": {
-                  "type": "string"
-                },
-                "textColorShade": {
+                "register": {
                   "type": "string"
                 }
               }

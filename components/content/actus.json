@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_content_actuses",
+  "info": {
+    "name": "actus",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "title_1": {
+      "type": "text"
+    },
+    "title_2": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

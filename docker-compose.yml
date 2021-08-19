@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:
-      - postgres:/data/jsco
+      - postgres:/data/postgres
 
   adminer:
     image: adminer
@@ -21,4 +21,4 @@ services:
       ADMINER_DESIGN: mvt
 
 volumes:
-  jsco:
+  postgres:

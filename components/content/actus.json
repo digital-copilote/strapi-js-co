@@ -18,6 +18,11 @@
     "text": {
       "type": "text",
       "required": true
+    },
+    "events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.event-card"
     }
   }
 }

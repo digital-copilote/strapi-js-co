@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_content_our_members",
+  "info": {
+    "name": "OurMembers",
+    "icon": "angle-left"
+  },
+  "options": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    },
+    "linkPortfolio": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "socialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.member-social-media-card"
+    }
+  }
+}

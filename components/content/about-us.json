@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_content_aboutuses",
+  "info": {
+    "name": "AboutUs",
+    "icon": "mobile-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title_1": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "text2": {
+      "type": "text"
+    },
+    "unReseau": {
+      "type": "component",
+      "repeatable": false,
+      "component": "cards.un-reseaux-card"
+    },
+    "uneExpertise": {
+      "type": "component",
+      "repeatable": false,
+      "component": "cards.une-expertise-card"
+    },
+    "desEntrepreneurs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "cards.des-entrepreneurs-card"
+    },
+    "desFormations": {
+      "type": "component",
+      "repeatable": false,
+      "component": "cards.des-formations-card"
+    }
+  }
+}

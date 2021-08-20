@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_cards_event_cards",
+  "info": {
+    "name": "Event_Card",
+    "icon": "bomb",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "link_register": {
+      "type": "string"
+    },
+    "hour": {
+      "type": "time"
+    }
+  }
+}

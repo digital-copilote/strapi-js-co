@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_partners",
+  "info": {
+    "name": "Partners",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "title_1": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_new_members",
+  "info": {
+    "name": "NewMember",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "title_1": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

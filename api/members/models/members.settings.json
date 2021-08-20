@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "members",
+  "info": {
+    "name": "members",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.members"
+    },
+    "members": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.our-members"
+    }
+  }
+}

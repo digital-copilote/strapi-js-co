@@ -12,15 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "intro": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content.members"
-    },
     "members": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "content.our-members"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

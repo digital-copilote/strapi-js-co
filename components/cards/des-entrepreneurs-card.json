@@ -2,12 +2,13 @@
   "collectionName": "components_cards_des_entrepreneurs_cards",
   "info": {
     "name": "DesEntrepreneurs_Card",
-    "icon": "adjust"
+    "icon": "adjust",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "text"
+      "type": "string"
     },
     "text": {
       "type": "text"

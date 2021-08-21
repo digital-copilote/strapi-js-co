@@ -2,7 +2,8 @@
   "collectionName": "components_content_partners",
   "info": {
     "name": "Partners",
-    "icon": "at"
+    "icon": "at",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,11 @@
     },
     "text": {
       "type": "text"
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.partner-card"
     }
   }
 }

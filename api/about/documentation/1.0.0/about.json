@@ -435,7 +435,7 @@
                   "text": {
                     "type": "string"
                   },
-                  "Icon": {
+                  "icon": {
                     "required": [
                       "id",
                       "name",
@@ -799,7 +799,7 @@
                   "text": {
                     "type": "string"
                   },
-                  "Icon": {
+                  "icon": {
                     "required": [
                       "id",
                       "name",

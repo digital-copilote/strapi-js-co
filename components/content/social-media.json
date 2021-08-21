@@ -10,13 +10,13 @@
     "title_1": {
       "type": "string"
     },
-    "title_2": {
-      "type": "string"
-    },
     "text": {
       "type": "text"
     },
-    "icon": {
+    "title_2": {
+      "type": "string"
+    },
+    "icons": {
       "type": "component",
       "repeatable": true,
       "component": "cards.social-media"

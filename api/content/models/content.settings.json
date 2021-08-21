@@ -27,15 +27,15 @@
       "repeatable": false,
       "component": "content.social-media"
     },
-    "partners": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content.social-media"
-    },
     "newMember": {
       "type": "component",
       "repeatable": false,
       "component": "content.new-member"
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.partners"
     }
   }
 }

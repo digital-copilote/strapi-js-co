@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
         username: env("DATABASE_USERNAME", process.env.DATABASE_USERNAME),
         password: env("DATABASE_PASSWORD", process.env.DATABASE_PASSWORD),
         schema: env("DATABASE_SCHEMA", process.env.DATABASE_SCHEMA), // Not Required
-        ssl: env("DATABASE_SSL, process.env.DATABASE_SSL"),
+        ssl: env("DATABASE_SSL, true"),
       },
       options: {
         useNullAsDefault: true,

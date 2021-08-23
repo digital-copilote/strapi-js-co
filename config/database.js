@@ -5,16 +5,19 @@ module.exports = ({ env }) => ({
       connector: "bookshelf",
       settings: {
         client: "postgres",
-     host: env("DATABASE_HOST", "localhost"),
+        host: env("DATABASE_HOST", "localhost"),
         port: env.int("DATABASE_PORT", 5432),
         database: env("DATABASE_NAME", "strapi"),
         username: env("DATABASE_USERNAME", "postgres"),
         password: env("DATABASE_PASSWORD", "postgres"),
         schema: env("DATABASE_SCHEMA", "public"), // Not Required
-        ssl: env("DATABASE_SSL", false),
-
+        ssl: {
+          rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
+        },
       },
-      options: {},
+      options: {
+        useNullAsDefault: true,
+      },
     },
   },
 });

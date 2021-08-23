@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_cards_member_social_media_cards",
+  "info": {
+    "name": "MemberSocialMedia_Card",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

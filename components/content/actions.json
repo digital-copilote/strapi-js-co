@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_content_actions",
+  "info": {
+    "name": "Actions",
+    "icon": "bullhorn",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "action_cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.action-card"
+    }
+  }
+}

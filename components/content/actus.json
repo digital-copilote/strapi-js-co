@@ -2,18 +2,27 @@
   "collectionName": "components_content_actuses",
   "info": {
     "name": "actus",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title_1": {
-      "type": "text"
+      "type": "string",
+      "required": true
     },
     "title_2": {
-      "type": "text"
+      "type": "string",
+      "required": true
     },
     "text": {
-      "type": "text"
+      "type": "text",
+      "required": true
+    },
+    "events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.event-card"
     }
   }
 }

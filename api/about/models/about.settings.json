@@ -16,6 +16,11 @@
       "type": "component",
       "repeatable": false,
       "component": "content.about-us"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.footer"
     }
   }
 }

@@ -312,7 +312,8 @@
     "schemas": {
       "Members": {
         "required": [
-          "id"
+          "id",
+          "title"
         ],
         "properties": {
           "id": {
@@ -323,7 +324,13 @@
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "firstName",
+                "lastName",
+                "function",
+                "linkPortfolio",
+                "description",
+                "avatar"
               ],
               "properties": {
                 "id": {
@@ -342,7 +349,8 @@
                   "type": "string"
                 },
                 "description": {
-                  "type": "string"
+                  "type": "string",
+                  "maxLength": 400
                 },
                 "avatar": {
                   "required": [
@@ -416,7 +424,10 @@
                   "items": {
                     "type": "object",
                     "required": [
-                      "id"
+                      "id",
+                      "name",
+                      "link",
+                      "icon"
                     ],
                     "properties": {
                       "id": {
@@ -503,6 +514,82 @@
           },
           "title": {
             "type": "string"
+          },
+          "footer": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "newMember": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "title_1",
+                  "text"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title_1": {
+                    "type": "string",
+                    "default": "Rejoignez la communauté JavaScript"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leurs limites"
+                  }
+                }
+              },
+              "linkSocialMedia": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "link_partners": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -511,13 +598,22 @@
         }
       },
       "NewMembers": {
+        "required": [
+          "title"
+        ],
         "properties": {
           "members": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "firstName",
+                "lastName",
+                "function",
+                "linkPortfolio",
+                "description",
+                "avatar"
               ],
               "properties": {
                 "id": {
@@ -536,7 +632,8 @@
                   "type": "string"
                 },
                 "description": {
-                  "type": "string"
+                  "type": "string",
+                  "maxLength": 400
                 },
                 "avatar": {
                   "required": [
@@ -610,7 +707,10 @@
                   "items": {
                     "type": "object",
                     "required": [
-                      "id"
+                      "id",
+                      "name",
+                      "link",
+                      "icon"
                     ],
                     "properties": {
                       "id": {
@@ -697,6 +797,82 @@
           },
           "title": {
             "type": "string"
+          },
+          "footer": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "newMember": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "title_1",
+                  "text"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title_1": {
+                    "type": "string",
+                    "default": "Rejoignez la communauté JavaScript"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leurs limites"
+                  }
+                }
+              },
+              "linkSocialMedia": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "link_partners": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

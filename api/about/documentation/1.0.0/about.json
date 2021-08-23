@@ -321,35 +321,46 @@
           "aboutUs": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title_1",
+              "text",
+              "text2"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "title_1": {
-                "type": "string"
+                "type": "string",
+                "default": "Qui sommes nous ?"
               },
               "text": {
-                "type": "string"
+                "type": "string",
+                "default": "Une association 1901 au service des développeurs et des entrepreneurs."
               },
               "text2": {
-                "type": "string"
+                "type": "string",
+                "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leur limites."
               },
               "unReseau": {
                 "type": "object",
                 "required": [
-                  "id"
+                  "id",
+                  "title",
+                  "text",
+                  "icon"
                 ],
                 "properties": {
                   "id": {
                     "type": "string"
                   },
                   "title": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "Un réseau"
                   },
                   "text": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "Nous sommes avant tout un réseau de développeurs et d'entrepreneurs réunis autour des nouvelles technologies du JavaScript. Le point central que nous sommes permet a ces deux mondes d'échanger leurs connaissances."
                   },
                   "icon": {
                     "required": [
@@ -423,7 +434,10 @@
               "uneExpertise": {
                 "type": "object",
                 "required": [
-                  "id"
+                  "id",
+                  "title",
+                  "text",
+                  "icon"
                 ],
                 "properties": {
                   "id": {
@@ -507,7 +521,10 @@
               "desEntrepreneurs": {
                 "type": "object",
                 "required": [
-                  "id"
+                  "id",
+                  "title",
+                  "text",
+                  "icon"
                 ],
                 "properties": {
                   "id": {
@@ -591,7 +608,10 @@
               "desFormations": {
                 "type": "object",
                 "required": [
-                  "id"
+                  "id",
+                  "title",
+                  "text",
+                  "icon"
                 ],
                 "properties": {
                   "id": {
@@ -674,6 +694,82 @@
               }
             }
           },
+          "footer": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "newMember": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "title_1",
+                  "text"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title_1": {
+                    "type": "string",
+                    "default": "Rejoignez la communauté JavaScript"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leurs limites"
+                  }
+                }
+              },
+              "linkSocialMedia": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "link_partners": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -685,35 +781,46 @@
           "aboutUs": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title_1",
+              "text",
+              "text2"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "title_1": {
-                "type": "string"
+                "type": "string",
+                "default": "Qui sommes nous ?"
               },
               "text": {
-                "type": "string"
+                "type": "string",
+                "default": "Une association 1901 au service des développeurs et des entrepreneurs."
               },
               "text2": {
-                "type": "string"
+                "type": "string",
+                "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leur limites."
               },
               "unReseau": {
                 "type": "object",
                 "required": [
-                  "id"
+                  "id",
+                  "title",
+                  "text",
+                  "icon"
                 ],
                 "properties": {
                   "id": {
                     "type": "string"
                   },
                   "title": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "Un réseau"
                   },
                   "text": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "Nous sommes avant tout un réseau de développeurs et d'entrepreneurs réunis autour des nouvelles technologies du JavaScript. Le point central que nous sommes permet a ces deux mondes d'échanger leurs connaissances."
                   },
                   "icon": {
                     "required": [
@@ -787,7 +894,10 @@
               "uneExpertise": {
                 "type": "object",
                 "required": [
-                  "id"
+                  "id",
+                  "title",
+                  "text",
+                  "icon"
                 ],
                 "properties": {
                   "id": {
@@ -871,7 +981,10 @@
               "desEntrepreneurs": {
                 "type": "object",
                 "required": [
-                  "id"
+                  "id",
+                  "title",
+                  "text",
+                  "icon"
                 ],
                 "properties": {
                   "id": {
@@ -955,7 +1068,10 @@
               "desFormations": {
                 "type": "object",
                 "required": [
-                  "id"
+                  "id",
+                  "title",
+                  "text",
+                  "icon"
                 ],
                 "properties": {
                   "id": {
@@ -1032,6 +1148,82 @@
                       "updated_by": {
                         "type": "string"
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "footer": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "newMember": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "title_1",
+                  "text"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title_1": {
+                    "type": "string",
+                    "default": "Rejoignez la communauté JavaScript"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leurs limites"
+                  }
+                }
+              },
+              "linkSocialMedia": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "link_partners": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
                     }
                   }
                 }

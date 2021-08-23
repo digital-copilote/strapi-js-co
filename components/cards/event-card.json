@@ -8,37 +8,44 @@
   "options": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "place": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "adresse": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "maxLength": 600
     },
     "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "link_register": {
       "type": "string"
     },
     "hour": {
-      "type": "time"
+      "type": "time",
+      "required": true
     }
   }
 }

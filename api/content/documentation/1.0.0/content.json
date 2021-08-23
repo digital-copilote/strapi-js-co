@@ -344,7 +344,14 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "place",
+                    "adresse",
+                    "date",
+                    "description",
+                    "image",
+                    "hour"
                   ],
                   "properties": {
                     "id": {
@@ -364,7 +371,8 @@
                       "format": "date"
                     },
                     "description": {
-                      "type": "string"
+                      "type": "string",
+                      "maxLength": 600
                     },
                     "image": {
                       "required": [
@@ -447,7 +455,9 @@
           "action": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "text"
             ],
             "properties": {
               "id": {
@@ -466,7 +476,8 @@
                   "required": [
                     "id",
                     "title",
-                    "text"
+                    "text",
+                    "icon"
                   ],
                   "properties": {
                     "id": {
@@ -553,7 +564,10 @@
           "socialMedia": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title_1",
+              "text",
+              "title_2"
             ],
             "properties": {
               "id": {
@@ -573,7 +587,10 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "link",
+                    "icon"
                   ],
                   "properties": {
                     "id": {
@@ -657,27 +674,12 @@
               }
             }
           },
-          "newMember": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title_1": {
-                "type": "string"
-              },
-              "text": {
-                "type": "string"
-              }
-            }
-          },
           "partners": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title_1",
+              "text"
             ],
             "properties": {
               "id": {
@@ -694,7 +696,11 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "description",
+                    "link",
+                    "logo"
                   ],
                   "properties": {
                     "id": {
@@ -775,6 +781,82 @@
                           "type": "string"
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "footer": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "newMember": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "title_1",
+                  "text"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title_1": {
+                    "type": "string",
+                    "default": "Rejoignez la communauté JavaScript"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leurs limites"
+                  }
+                }
+              },
+              "linkSocialMedia": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "link_partners": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
                     }
                   }
                 }
@@ -815,7 +897,14 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "place",
+                    "adresse",
+                    "date",
+                    "description",
+                    "image",
+                    "hour"
                   ],
                   "properties": {
                     "id": {
@@ -835,7 +924,8 @@
                       "format": "date"
                     },
                     "description": {
-                      "type": "string"
+                      "type": "string",
+                      "maxLength": 600
                     },
                     "image": {
                       "required": [
@@ -918,7 +1008,9 @@
           "action": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "text"
             ],
             "properties": {
               "id": {
@@ -937,7 +1029,8 @@
                   "required": [
                     "id",
                     "title",
-                    "text"
+                    "text",
+                    "icon"
                   ],
                   "properties": {
                     "id": {
@@ -1024,7 +1117,10 @@
           "socialMedia": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title_1",
+              "text",
+              "title_2"
             ],
             "properties": {
               "id": {
@@ -1044,7 +1140,10 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "link",
+                    "icon"
                   ],
                   "properties": {
                     "id": {
@@ -1128,27 +1227,12 @@
               }
             }
           },
-          "newMember": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title_1": {
-                "type": "string"
-              },
-              "text": {
-                "type": "string"
-              }
-            }
-          },
           "partners": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title_1",
+              "text"
             ],
             "properties": {
               "id": {
@@ -1165,7 +1249,11 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "id"
+                    "id",
+                    "name",
+                    "description",
+                    "link",
+                    "logo"
                   ],
                   "properties": {
                     "id": {
@@ -1246,6 +1334,82 @@
                           "type": "string"
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "footer": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "newMember": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "title_1",
+                  "text"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title_1": {
+                    "type": "string",
+                    "default": "Rejoignez la communauté JavaScript"
+                  },
+                  "text": {
+                    "type": "string",
+                    "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leurs limites"
+                  }
+                }
+              },
+              "linkSocialMedia": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "link_partners": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "name",
+                    "link"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
                     }
                   }
                 }

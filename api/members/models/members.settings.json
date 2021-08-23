@@ -18,7 +18,13 @@
       "component": "content.our-members"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.footer"
     }
   }
 }

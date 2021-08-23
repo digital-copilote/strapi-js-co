@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_content_footers",
+  "info": {
+    "name": "footer",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "newMember": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.new-member"
+    },
+    "linkSocialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.social-media-footer"
+    },
+    "link_partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.partner-footer"
+    }
+  }
+}

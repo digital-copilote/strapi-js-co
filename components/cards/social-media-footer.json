@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_cards_social_media_footers",
+  "info": {
+    "name": "Social_Media_Footer",
+    "icon": "band-aid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

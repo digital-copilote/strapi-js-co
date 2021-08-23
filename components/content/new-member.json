@@ -2,15 +2,20 @@
   "collectionName": "components_content_new_members",
   "info": {
     "name": "NewMember",
-    "icon": "arrow-down"
+    "icon": "arrow-down",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title_1": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "default": "Rejoignez la communauté JavaScript"
     },
     "text": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leurs limites"
     }
   }
 }

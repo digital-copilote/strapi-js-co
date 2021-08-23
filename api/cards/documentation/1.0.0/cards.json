@@ -529,7 +529,8 @@
               "required": [
                 "id",
                 "title",
-                "text"
+                "text",
+                "icon"
               ],
               "properties": {
                 "id": {
@@ -626,7 +627,8 @@
               "required": [
                 "id",
                 "title",
-                "text"
+                "text",
+                "icon"
               ],
               "properties": {
                 "id": {

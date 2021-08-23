@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_cards_action_cards",
+  "info": {
+    "name": "Action_Card",
+    "icon": "exchange-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "text",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

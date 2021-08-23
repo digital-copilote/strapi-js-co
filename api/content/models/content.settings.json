@@ -17,22 +17,40 @@
       "repeatable": false,
       "component": "content.actus"
     },
-    "event": {
+    "action": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.actions"
+    },
+    "socialMedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.social-media"
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.social-media"
+    },
+    "newMember": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.new-member"
+    },
+    "aboutUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.about-us"
+    },
+    "introMembers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.members"
+    },
+    "members": {
       "type": "component",
       "repeatable": true,
-      "component": "content.event"
-    },
-    "primary_color": {
-      "type": "text"
-    },
-    "secondary_color": {
-      "type": "string"
-    },
-    "font_primary_color": {
-      "type": "string"
-    },
-    "font_secondary_color": {
-      "type": "string"
+      "component": "content.our-members"
     }
   }
 }

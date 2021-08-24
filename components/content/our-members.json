@@ -2,35 +2,42 @@
   "collectionName": "components_content_our_members",
   "info": {
     "name": "OurMembers",
-    "icon": "angle-left"
+    "icon": "angle-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "firstName": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "lastName": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "function": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "linkPortfolio": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "maxLength": 400
     },
     "avatar": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "socialMedia": {

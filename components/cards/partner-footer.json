@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_cards_partner_footers",
+  "info": {
+    "name": "partner_footer",
+    "icon": "barcode",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

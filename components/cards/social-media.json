@@ -2,26 +2,29 @@
   "collectionName": "components_cards_social_medias",
   "info": {
     "name": "Social_Media",
-    "icon": "basketball-ball"
+    "icon": "basketball-ball",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Name": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "required": true
     },
     "link": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "Icon": {
+    "icon": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     }
   }

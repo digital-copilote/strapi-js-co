@@ -8,13 +8,19 @@
   "options": {},
   "attributes": {
     "title_1": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "default": "Qui sommes nous ?"
     },
     "text": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "default": "Une association 1901 au service des développeurs et des entrepreneurs."
     },
     "text2": {
-      "type": "text"
+      "type": "text",
+      "default": "Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies et leur limites.",
+      "required": true
     },
     "unReseau": {
       "type": "component",

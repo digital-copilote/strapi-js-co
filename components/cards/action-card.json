@@ -7,10 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "image": {
-      "type": "text",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true
@@ -18,6 +14,18 @@
     "text": {
       "type": "text",
       "required": true
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }

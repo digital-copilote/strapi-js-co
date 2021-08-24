@@ -8,21 +8,25 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "default": "Un réseau"
     },
     "text": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "default": "Nous sommes avant tout un réseau de développeurs et d'entrepreneurs réunis autour des nouvelles technologies du JavaScript. Le point central que nous sommes permet a ces deux mondes d'échanger leurs connaissances."
     },
     "icon": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     }
   }

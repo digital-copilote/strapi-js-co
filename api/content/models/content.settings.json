@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "contents",
   "info": {
-    "name": "content",
+    "name": "homepage",
     "description": ""
   },
   "options": {
@@ -30,27 +30,12 @@
     "partners": {
       "type": "component",
       "repeatable": false,
-      "component": "content.social-media"
+      "component": "content.partners"
     },
-    "newMember": {
+    "footer": {
       "type": "component",
       "repeatable": false,
-      "component": "content.new-member"
-    },
-    "aboutUs": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content.about-us"
-    },
-    "introMembers": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content.members"
-    },
-    "members": {
-      "type": "component",
-      "repeatable": true,
-      "component": "content.our-members"
+      "component": "content.footer"
     }
   }
 }
